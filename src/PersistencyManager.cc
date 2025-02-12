@@ -61,6 +61,8 @@ void PersistencyManager::CollectOpticksHits(){
     OpticksHitCollectCount++;
     // clear the hits
     G4CXOpticks::Get()->reset(eventID);
+
+    AllOpticksHits.clear();
     
 #endif
 

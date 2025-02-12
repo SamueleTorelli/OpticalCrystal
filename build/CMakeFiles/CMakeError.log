@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2b446/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2b446.dir/build.make CMakeFiles/cmTC_2b446.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b1219/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b1219.dir/build.make CMakeFiles/cmTC_b1219.dir/build
 gmake[1]: Entering directory '/scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2b446.dir/src.c.o
-/scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2b446.dir/src.c.o -c /scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_2b446
-/scicomp/builds/Rocky/8.7/CascadeLake/software/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b446.dir/link.txt --verbose=1
-/scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/bin/cc CMakeFiles/cmTC_2b446.dir/src.c.o -o cmTC_2b446 
-/scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: CMakeFiles/cmTC_2b446.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_b1219.dir/src.c.o
+/scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b1219.dir/src.c.o -c /scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b1219
+/scicomp/builds/Rocky/8.7/CascadeLake/software/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1219.dir/link.txt --verbose=1
+/scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/bin/cc CMakeFiles/cmTC_b1219.dir/src.c.o -o cmTC_b1219 
+/scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: CMakeFiles/cmTC_b1219.dir/src.c.o: in function `main':
 src.c:(.text+0x2d): undefined reference to `pthread_create'
 /scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: src.c:(.text+0x39): undefined reference to `pthread_detach'
 /scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: src.c:(.text+0x45): undefined reference to `pthread_cancel'
 /scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_2b446.dir/build.make:99: cmTC_2b446] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_b1219.dir/build.make:99: cmTC_b1219] Error 1
 gmake[1]: Leaving directory '/scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_2b446/fast] Error 2
+gmake: *** [Makefile:127: cmTC_b1219/fast] Error 2
 
 
 Source file was:

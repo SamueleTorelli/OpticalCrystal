@@ -50,7 +50,7 @@ public:
   G4VPhysicalVolume* Construct() override;
 
   // Method to construct sensitive detectors and fields
-  //virtual void ConstructSDandField() override;
+  virtual void ConstructSDandField() override;
 
   
 private:

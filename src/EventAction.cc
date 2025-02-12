@@ -33,6 +33,8 @@
 
 #include "G4Event.hh"
 #include "G4RunManager.hh"
+#include "G4TrajectoryContainer.hh"
+#include <G4Trajectory.hh>
 
 #ifdef With_Opticks
     #  include "SEvt.hh"
@@ -105,7 +107,7 @@ void EventAction::EndOfEventAction(const G4Event* event)
   //G4cout<<" Opticks End of Event Action" <<G4endl;                                                                                                                                                                                                
 
 #endif
-  
+
   
 }
 

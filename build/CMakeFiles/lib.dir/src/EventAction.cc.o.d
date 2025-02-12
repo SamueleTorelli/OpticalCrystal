@@ -840,6 +840,10 @@ CMakeFiles/lib.dir/src/EventAction.cc.o: \
  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4ApplicationState.hh \
  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4UserTrackingAction.hh \
  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4RunManagerKernel.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4TrajectoryContainer.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4Trajectory.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4TrajectoryPoint.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VTrajectoryPoint.hh \
  /home/torellis/Software/opticks_build/include/G4CX/G4CXOpticks.hh \
  /home/torellis/Software/opticks_build/include/SysRap/schrono.h \
  /home/torellis/Software/opticks_build/include/G4CX/G4CX_API_EXPORT.hh

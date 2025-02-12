@@ -391,7 +391,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 
-/*
+
   void DetectorConstruction::ConstructSDandField() {
     
     G4VSensitiveDetector* sensitiveDetector = new SiPMSensitiveDetector("SiPMSensitiveDetector");
@@ -400,6 +400,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     // Assign the sensitive detector to the logical volume
     fsens_logic_vol->SetSensitiveDetector(sensitiveDetector);
   }
-*/
 
-  }
+
+}

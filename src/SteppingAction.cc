@@ -109,62 +109,46 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       pManger->fOpticksPhotonCounter+=(num_photons);
       #endif*/
 
-      int CollectedPhotons;
-      int maxPhoton=16500;
-      
-      CollectedPhotons=SEvt::GetNumPhotonCollected(0);
-
-      std::cout << "CollectedPhotons: " <<CollectedPhotons << std::endl;
-      
-      std::cout << "HERE2" << std::endl;
-
-      G4RunManager * runmng=G4RunManager::GetRunManager();      
+      G4RunManager * runmng=G4RunManager::GetRunManager();
       const int eventID=runmng->GetCurrentEvent()->GetEventID();
+
+      int CollectedPhotons=SEvt::GetNumPhotonCollected(0);
+      int maxPhoton=SEventConfig::MaxPhoton();
       
-      if(CollectedPhotons<(maxPhoton*0.97)){
-        // Get Persistance Manager                                                                                                                                                               
-        std::cout<<"Event " << eventID<<" Simulating Photons in GPU and Saving the hits to file .." <<std::endl;
-        G4CXOpticks * g4xc=G4CXOpticks::Get();
-        //auto startTime=std::chrono::high_resolution_clock::now();
-        g4xc->simulate(eventID,0);
-        cudaDeviceSynchronize();
-        //auto endTime=std::chrono::high_resolution_clock::now();                                                                                                                                                                                                               
-        //std::chrono::duration<double> duration = endTime - startTime;                                                                                                                                                                                                         
-        //std::cout << "SimTime " << duration.count() << std::endl;                                                                                                                                                                                     
-	std::cout << "SEvt::GetNumHit(0)" << SEvt::GetNumHit(0) << std::endl;
+      if(CollectedPhotons>(maxPhoton*0.97)){
+			
+	std::cout<<"Event " << eventID<<" Simulating Photons in GPU and Saving the hits to file .." <<std::endl;
+      
+	G4CXOpticks * g4xc=G4CXOpticks::Get();
+	g4xc->simulate(eventID,0);
+       	cudaDeviceSynchronize();
+	  
+	pManger->CollectOpticksHits();
+       
+	
+	if(SEvt::GetNumPhotonCollected(0)>0)
+	  G4CXOpticks::Get()->reset(eventID);
       }
+      
 #endif
       
     }
-  }else{
-    
-    std::cout << "HERE4" << std::endl;
-    /*#ifdef With_G4OpticksTest
-      if( G4OpticalPhoton::Definition() and track->GetTrackStatus()==fStopAndKill) pManger->fG4PhotonCounter+=1;
-      #endif*/
-    
-#if defined(With_Opticks) and not defined(With_G4OpticksTest)
-    std::cout << "HERE4.2" << std::endl;
-    //if(step->GetTrack()->GetDefinition()==G4OpticalPhoton::Definition()) step->GetTrack()->SetTrackStatus(fStopAndKill);
-#endif
   }
+  
 #if not defined(With_Opticks) || defined(With_G4OpticksTest)
   static G4OpBoundaryProcess* boundary = 0;
-  std::cout << "HERE4.5" << std::endl;
   if (!boundary) { // the pointer is not defined yet                                                                                                                                                                                                    
     // Get the list of processes defined for the optical photon                                                                                                                                                                                       
     // and loop through it to find the optical boundary process.                                                                                                                                                                                      
     G4ProcessVector* pv = pdef->GetProcessManager()->GetProcessList();
     for (size_t i=0; i<pv->size(); i++) {
-      std::cout << "HERE5" << std::endl;
+
       if ((*pv)[i]->GetProcessName() == "OpBoundary") {
 	boundary = (G4OpBoundaryProcess*) (*pv)[i];
-	std::cout << "HERE5.5" << std::endl;
 	break;
       }
     }
   }
-  std::cout << "HERE6" << std::endl;
   if (step->GetPostStepPoint()->GetStepStatus() == fGeomBoundary) {
     if (boundary and boundary->GetStatus() == Detection ){
       G4String detector_name = step->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetName();
@@ -172,7 +156,6 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       G4double wavelength=1239.8/PostStep->GetTotalEnergy()*CLHEP::eV; //nm                                                                                                                                                                         
       std::cot << "Optical Hits" << detector_name << " " << PostStep->GetPosition() << " " << PostStep->GetGlobalTime() << " " PostStep->GetMomentum() << " " << PostStep->GetPolarization() << " " << wavelength << std::endl;
     }
-    std::cout << "HERE7" << std::endl;
   }
   
   
