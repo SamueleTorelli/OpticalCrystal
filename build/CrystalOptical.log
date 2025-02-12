@@ -1,0 +1,237 @@
+﻿2025-02-11 23:30:38.178 INFO  [156234] [G4CXOpticks::init@107] CSGOptiX::Desc Version 7 NOT:WITH_CUSTOM4 
+G4CXOpticks::desc sim Y tr N wd N fd N cx N qs N
+2025-02-11 23:30:38.178 INFO  [156234] [G4CXOpticks::setGeometry@243] [ G4VPhysicalVolume world 0x2761160
+2025-02-11 23:30:38.178 INFO  [156234] [G4CXOpticks::setGeometry@250] [U4Tree::Create 
+2025-02-11 23:30:38.178 INFO  [156234] [U4Tree::Create@214] [new U4Tree
+2025-02-11 23:30:38.178 INFO  [156234] [U4Tree::init@270] -initRayleigh
+2025-02-11 23:30:38.178 INFO  [156234] [U4Tree::init@272] -initMaterials
+2025-02-11 23:30:38.189 INFO  [156234] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-11 23:30:38.189 INFO  [156234] [U4Tree::init@277] -initScint
+2025-02-11 23:30:38.189 INFO  [156234] [U4Tree::init@280] -initSurfaces
+2025-02-11 23:30:38.190 INFO  [156234] [U4Tree::init@283] -initSolids
+2025-02-11 23:30:38.190 INFO  [156234] [U4Tree::init@285] -initNodes
+2025-02-11 23:30:38.191 INFO  [156234] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-11 23:30:38.193 INFO  [156234] [U4Tree::init@290] -initStandard
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@216] ]new U4Tree
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@218] [stree::factorize
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@220] ]stree::factorize
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@227] [stree::add_inst
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@229] ]stree::add_inst
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@234] [stree::postcreate
+2025-02-11 23:30:38.196 INFO  [156234] [U4Tree::Create@236] ]stree::postcreate
+2025-02-11 23:30:38.196 INFO  [156234] [G4CXOpticks::setGeometry@252] ]U4Tree::Create 
+2025-02-11 23:30:38.196 INFO  [156234] [G4CXOpticks::setGeometry@255] [SSim::initSceneFromTree
+2025-02-11 23:30:38.203 INFO  [156234] [G4CXOpticks::setGeometry@257] ]SSim::initSceneFromTree
+2025-02-11 23:30:38.203 INFO  [156234] [G4CXOpticks::setGeometry@260] [CSGFoundry::CreateFromSim
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::import@47] [
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importSolidGlobal@164]  ridx 0 ridx_type R rlabel R0 num_src 131
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    0 lvid   4 binaryNodes(bn)   1 : World
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    1 lvid   0 binaryNodes(bn)   1 : Crystal
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    2 lvid   1 binaryNodes(bn)   3 : TeflonBox
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    3 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    4 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    5 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    6 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    7 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    8 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx    9 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   10 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   11 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   12 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   13 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   14 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   15 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   16 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   17 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   18 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   19 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   20 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   21 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   22 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   23 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   24 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   25 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   26 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.240 INFO  [156234] [CSGImport::importPrim@428]  primIdx   27 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   28 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   29 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   30 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   31 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   32 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   33 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   34 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   35 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   36 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   37 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   38 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   39 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   40 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   41 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   42 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   43 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   44 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   45 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   46 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   47 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   48 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   49 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   50 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   51 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   52 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   53 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   54 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   55 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   56 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   57 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   58 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   59 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   60 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   61 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   62 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   63 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   64 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   65 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   66 lvid   2 binaryNodes(bn)   1 : SIPM_S13372_WINDOW
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   67 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   68 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   69 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   70 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   71 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   72 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   73 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   74 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   75 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   76 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   77 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.241 INFO  [156234] [CSGImport::importPrim@428]  primIdx   78 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   79 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   80 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   81 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   82 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   83 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   84 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   85 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   86 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   87 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   88 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   89 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   90 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   91 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   92 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   93 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   94 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   95 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   96 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   97 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   98 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx   99 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  100 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  101 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  102 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  103 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  104 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  105 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  106 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  107 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  108 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  109 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  110 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  111 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  112 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  113 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  114 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  115 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  116 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  117 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  118 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  119 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  120 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  121 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  122 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  123 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  124 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  125 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  126 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  127 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  128 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.242 INFO  [156234] [CSGImport::importPrim@428]  primIdx  129 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.243 INFO  [156234] [CSGImport::importPrim@428]  primIdx  130 lvid   3 binaryNodes(bn)   1 : SIPM_S13372_SENSAREA
+2025-02-11 23:30:38.243 INFO  [156234] [CSGImport::import@58] ]
+2025-02-11 23:30:38.243 INFO  [156234] [G4CXOpticks::setGeometry@262] ]CSGFoundry::CreateFromSim
+2025-02-11 23:30:38.243 INFO  [156234] [G4CXOpticks::setGeometry@265] [setGeometry(fd_)
+2025-02-11 23:30:38.243 INFO  [156234] [G4CXOpticks::setGeometry_@319] [ fd 0x2843580
+2025-02-11 23:30:38.243 INFO  [156234] [G4CXOpticks::setGeometry_@325] [ CSGOptiX::Create 
+2025-02-11 23:30:38.543 INFO  [156234] [SSim::serialize@445] [
+2025-02-11 23:30:38.544 INFO  [156234] [SSim::serialize@461] ]
+2025-02-11 23:30:38.544 INFO  [156234] [QSim::UploadComponents@102] [ ssim 0x27884c0
+2025-02-11 23:30:38.545 INFO  [156234] [QSim::UploadComponents@105] [ new QBase
+2025-02-11 23:30:38.680 INFO  [156234] [QSim::UploadComponents@107] ] new QBase : latency here of about 0.3s from first device access, if latency of >1s need to start nvidia-persistenced 
+2025-02-11 23:30:38.680 INFO  [156234] [QSim::UploadComponents@108] QBase::desc base 0x28dd1a0 d_base 0x149d50400000 base.desc qbase::desc pidx 4294967295
+2025-02-11 23:30:38.680 INFO  [156234] [QSim::UploadComponents@112] [ new QRng skipahead_event_offset : 100000 OPTICKS_EVENT_SKIPAHEAD
+2025-02-11 23:30:39.150 INFO  [156234] [QSim::UploadComponents@114] ] new QRng QRng path /home/torellis/.opticks/rngcache/RNG/QCurandState_3000000_0_0.bin rngmax 3000000 qr 0x3184570 qr.skipahead_event_offset 100000 d_qr 0x149d50400200
+2025-02-11 23:30:39.150 INFO  [156234] [QSim::UploadComponents@116] QRng path /home/torellis/.opticks/rngcache/RNG/QCurandState_3000000_0_0.bin rngmax 3000000 qr 0x3184570 qr.skipahead_event_offset 100000 d_qr 0x149d50400200
+2025-02-11 23:30:39.150 INFO  [156234] [QSim::UploadComponents@129] QOptical optical NP  dtype <i4(5, 4, 4, ) size 80 uifc i ebyte 4 shape.size 3 data.size 320 meta.size 0 names.size 0
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@132] QBnd src NP  dtype <f4(5, 4, 2, 761, 4, ) size 121760 uifc f ebyte 4 shape.size 5 data.size 487040 meta.size 61 names.size 5 tex QTex width 761 height 40 texObj 1 meta 0x367c670 d_meta 0x149d50400600 tex 0x367e290
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@136] QDebug::desc  dbg 0x285e240 d_dbg 0x149d50400a00
+ QState::Desc QState::Desc
+material1 ( 1.000,1000.000,1000.000, 0.000) 
+material2 ( 1.500,1000.000,1000.000, 0.000) 
+m1group2  (300.000, 0.000, 0.000, 0.000) 
+surface   ( 0.000, 0.000, 0.000, 0.000) 
+optical   (     0,     0,     0,     0) 
+
+ dbg.p.desc  pos ( 0.000, 0.000, 0.000)  t     0.000  mom ( 1.000, 0.000, 0.000)  iindex 1065353216  pol ( 0.000, 1.000, 0.000)  wl  500.000   bn 0 fl 0 id 0 or 1 ix 0 fm 0 ab    ii 1065353216
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@149]   propcom null, snam::PROPCOM propcom.npy
+2025-02-11 23:30:39.152 ERROR [156234] [QSim::UploadComponents@156]  icdf null, snam::ICDF icdf.npy
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@171] QCerenkov fold - icdf_ - icdf - tex 0
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@182]  NO QPMT instance  spmt_f NO  qpmt NO 
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@188] QPMT<float> NOT:WITH_CUSTOM4  INSTANCE:NO  
+ spmt_f NO  qpmt NO 
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@200]  multifilm null, snam::MULTIFILM multifilm.npy
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::UploadComponents@207] ] ssim 0x27884c0
+2025-02-11 23:30:39.152 INFO  [156234] [QEvent::QEvent@105] 
+2025-02-11 23:30:39.152 INFO  [156234] [QEvent::init@130]  QEvent::init calling SEvt/setCompProvider 
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::QSim@251] QSim::desc
+ this 0x367dad0 INSTANCE 0x0 QEvent.hh:event 0x36f6390 qsim.h:sim 0x0
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::init@293] QSim::desc
+ this 0x367dad0 INSTANCE 0x367dad0 QEvent.hh:event 0x36f6390 qsim.h:sim 0x36f6340
+2025-02-11 23:30:39.152 INFO  [156234] [QSim::init@294] 
+QSim::descComponents
+ (QBase)base             YES
+ (QEvent)event           YES
+ (SEvt)sev               YES
+ (QRng)rng               YES
+ (QScint)scint           NO 
+ (QCerenkov)cerenkov     YES
+ (QBnd)bnd               YES
+ (QOptical)optical       YES
+ (QDebug)debug_          YES
+ (QProp)prop             NO 
+ (QPMT)pmt               NO 
+ (QMultiFilm)multifilm   NO 
+ (qsim)sim               YES
+ (qsim)d_sim             YES
+ (qdebug)dbg             YES
+ (qdebug)d_dbg           YES
+
+2025-02-11 23:30:39.279 INFO  [156234] [G4CXOpticks::setGeometry_@327] ] CSGOptiX::Create 
+2025-02-11 23:30:39.279 INFO  [156234] [G4CXOpticks::setGeometry_@338]  cx Y qs Y QSim::Get Y
+2025-02-11 23:30:39.279 INFO  [156234] [G4CXOpticks::setGeometry_@346] ] fd 0x2843580
+2025-02-11 23:30:39.279 INFO  [156234] [G4CXOpticks::setGeometry_@352] [ G4CXOpticks__setGeometry_saveGeometry 
+2025-02-11 23:30:39.279 INFO  [156234] [G4CXOpticks::saveGeometry@494]  dir_ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-11 23:30:39.279 INFO  [156234] [G4CXOpticks::saveGeometry@496] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-11 23:30:39.279 INFO  [156234] [G4CXOpticks::saveGeometry@497] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-11 23:30:39.282 INFO  [156234] [U4GDML::write@291] Disabling GDXML kludge fix, as Geant4 version 1112>= 1100  U4GDML_GDXML_FIX_DISABLE 1 U4GDML_GDXML_FIX 0
+2025-02-11 23:30:39.282 INFO  [156234] [U4GDML::write@311]  NOT Applying GDXML::Fix  dstpath /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml
+2025-02-11 23:30:39.282 INFO  [156234] [U4GDML::write_@318] [
+2025-02-11 23:30:39.283 INFO  [156234] [U4GDML::write_@327]  path /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml exists YES rc 0
+2025-02-11 23:30:39.289 INFO  [156234] [U4GDML::write_@335] ]
+2025-02-11 23:30:40.111 INFO  [156234] [G4CXOpticks::saveGeometry@503] ] /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-11 23:30:40.111 INFO  [156234] [G4CXOpticks::setGeometry_@354] ] G4CXOpticks__setGeometry_saveGeometry 
+2025-02-11 23:30:40.111 INFO  [156234] [G4CXOpticks::setGeometry@267] ]setGeometry(fd_)
+2025-02-11 23:30:40.111 INFO  [156234] [G4CXOpticks::setGeometry@269] CSGOptiX::Desc Version 7 NOT:WITH_CUSTOM4 
+2025-02-11 23:30:40.111 INFO  [156234] [G4CXOpticks::setGeometry@271] ] G4VPhysicalVolume world 0x2761160
+2025-02-11 23:30:40.339 INFO  [156234] [U4::CollectGenstep_DsG4Scintillation_r4695@179] sgs: idx   0 pho 14700 off      0 typ DsG4Scintillation_r4695
+2025-02-11 23:30:40.340 INFO  [156234] [U4::CollectGenstep_DsG4Scintillation_r4695@179] sgs: idx   1 pho  6300 off  14700 typ DsG4Scintillation_r4695

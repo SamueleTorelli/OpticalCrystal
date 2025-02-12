@@ -131,20 +131,21 @@ namespace opticalprops {
     };
 
     mpt->AddProperty("SCINTILLATIONCOMPONENT1", energy, emission_intensity_cold);
-    // mpt->AddProperty("SCINTILLATIONCOMPONENT2", energy, emission_intensity);
+    mpt->AddProperty("SCINTILLATIONCOMPONENT2", energy, emission_intensity_warm);
     // mpt->AddProperty("ELSPECTRUM"            , energy, emission_intensity, 1);
     G4double csi_time_fast  =     0.81 * us;
-    // G4double csi_time_slow  =    28 * ns;
+    G4double csi_time_slow  =    28 * ns;
     // CONST PROPERTIES https://www.osti.gov/servlets/purl/1514707
     //mpt->AddConstProperty("SCINTILLATIONYIELD", 100000 / MeV);
 
     //This is fake, for test purpose, the real one is above
-    mpt->AddConstProperty("SCINTILLATIONYIELD", 10 / MeV);
+    mpt->AddConstProperty("SCINTILLATIONYIELD", 1000 / MeV);
     
-    mpt->AddConstProperty("SCINTILLATIONYIELD1", 1. );
-    // mpt->AddConstProperty("SCINTILLATIONYIELD1", 0. );
+    mpt->AddConstProperty("SCINTILLATIONYIELD1", 700 / MeV );
+    mpt->AddConstProperty("SCINTILLATIONYIELD2", 300 / MeV );
+
     mpt->AddConstProperty("SCINTILLATIONTIMECONSTANT1",   csi_time_fast);
-    // mpt->AddConstProperty("SCINTILLATIONTIMECONSTANT2",   csi_time_slow);
+    mpt->AddConstProperty("SCINTILLATIONTIMECONSTANT2",   csi_time_slow);
     mpt->AddConstProperty("RESOLUTIONSCALE",    1.0);
 
     return mpt;
