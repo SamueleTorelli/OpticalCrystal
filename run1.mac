@@ -14,4 +14,4 @@
 /gun/particle e-
 /gun/energy .511 MeV
 #
-/run/beamOn 1
+/run/beamOn 2

@@ -91,9 +91,11 @@ void EventAction::EndOfEventAction(const G4Event* event)
   if(ngenstep>0){
     std::cout<<g4cx->desc()<<std::endl;
     std::cout<<"--- G4Optickx ---" << g4cx->descSimulate() <<std::endl;
+    std::cout << "Event0.2HERE" << std::endl;
     g4cx->simulate(eventID,0); // For Simulation
+    std::cout << "Event0.3HERE" << std::endl;
     cudaDeviceSynchronize();
-    
+    std::cout << "Event1HERE" << std::endl;
     hits=SEvt::GetNumHit(0);
     
     std::cout << "DefaultEventAction Hits " << hits<<std::endl;
@@ -101,6 +103,8 @@ void EventAction::EndOfEventAction(const G4Event* event)
     
     std::cout<<"Event " <<eventID <<" Simulating with Opticks nphotons "<< nphotons << " nsteps " << ngenstep << " Hits " <<SEvt::GetNumHit(0) << std::endl;
   }
+  
+  std::cout << "Event2HERE" << std::endl;
   
   G4CXOpticks::Get()->reset(eventID);
   

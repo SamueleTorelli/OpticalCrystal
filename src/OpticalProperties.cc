@@ -130,16 +130,27 @@ namespace opticalprops {
       0.0,  0.04, 0.10, 0.29, 0.67, 0.88, 0.29, 0.10, 0.02, 0
     };
 
+    std::vector<G4double> reemission_prob = {
+      0.1,  0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1
+    };
+
     mpt->AddProperty("SCINTILLATIONCOMPONENT1", energy, emission_intensity_cold);
-    mpt->AddProperty("SCINTILLATIONCOMPONENT2", energy, emission_intensity_warm);
+    mpt->AddProperty("FASTCOMPONENT", energy, emission_intensity_cold,true);
+    
+    mpt->AddProperty("SCINTILLATIONCOMPONENT2", energy, emission_intensity_cold);
+    mpt->AddProperty("SLOWCOMPONENT", energy, emission_intensity_cold,true);
+
+    mpt->AddProperty("REEMISSIONPROB", energy, reemission_prob,true);
+    
     // mpt->AddProperty("ELSPECTRUM"            , energy, emission_intensity, 1);
     G4double csi_time_fast  =     0.81 * us;
     G4double csi_time_slow  =    28 * ns;
+
     // CONST PROPERTIES https://www.osti.gov/servlets/purl/1514707
     //mpt->AddConstProperty("SCINTILLATIONYIELD", 100000 / MeV);
 
     //This is fake, for test purpose, the real one is above
-    mpt->AddConstProperty("SCINTILLATIONYIELD", 1000 / MeV);
+    mpt->AddConstProperty("SCINTILLATIONYIELD", 10000 / MeV);
     
     mpt->AddConstProperty("SCINTILLATIONYIELD1", 700 / MeV );
     mpt->AddConstProperty("SCINTILLATIONYIELD2", 300 / MeV );

@@ -332,6 +332,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //
   //
 
+  /*
   //TeflonSurface
   G4OpticalSurface* opTeflonSurface = new G4OpticalSurface("TeflonSurface");
   opTeflonSurface->SetType(dielectric_LUT);
@@ -339,8 +340,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   opTeflonSurface->SetModel(LUT);
   opTeflonSurface->SetMaterialPropertiesTable(opticalprops::PTFE());
   
-  G4LogicalSkinSurface* LTeflonSurface  = new G4LogicalSkinSurface( "LTeflonSurface", logicTeflonBox, opTeflonSurface);
+  G4LogicalSkinSurface* LTeflonSurface  =
+    new G4LogicalSkinSurface( "LTeflonSurface", logicTeflonBox, opTeflonSurface);
 
+  
   //CrysSurface
   G4OpticalSurface* opCrysSurface = new G4OpticalSurface("CrysSurface");
   opCrysSurface->SetType(dielectric_LUT);
@@ -348,8 +351,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   opCrysSurface->SetModel(LUT);
   opCrysSurface->SetMaterialPropertiesTable(opticalprops::PTFE());
   
-  G4LogicalSkinSurface* LCrysSurface  = new G4LogicalSkinSurface( "LCrysSurface", logicCrystal, opCrysSurface);
-  
+  G4LogicalSkinSurface* LCrysSurface  =
+    new G4LogicalSkinSurface( "LCrysSurface", logicCrystal, opCrysSurface);
+  */
 
   //WindowSkin (Use the skin due to contact with multiple elements)
   G4OpticalSurface* opWindowSurface = new G4OpticalSurface("WindowSkin");

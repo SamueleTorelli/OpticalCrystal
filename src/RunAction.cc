@@ -39,6 +39,12 @@
 #include "G4LogicalVolume.hh"
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4PVPlacement.hh"
+
+#ifdef With_Opticks
+#include "G4TransportationManager.hh"
+#include "G4CXOpticks.hh"
+#endif
 
 namespace B1
 {
@@ -59,7 +65,8 @@ void RunAction::BeginOfRunAction(const G4Run*)
 {
   // inform the runManager to save random number seed
   G4RunManager::GetRunManager()->SetRandomNumberStore(false);
-
+  G4CXOpticks* g4ok                 = G4CXOpticks::Get();
+  
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

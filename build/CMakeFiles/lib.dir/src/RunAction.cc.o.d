@@ -546,4 +546,12 @@ CMakeFiles/lib.dir/src/RunAction.cc.o: \
  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4LogicalVolume.hh \
  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4UnitsTable.hh \
  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4UnitsTable.icc \
- /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4SystemOfUnits.hh
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4SystemOfUnits.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4PVPlacement.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4TransportationManager.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4SafetyHelper.hh \
+ /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4TransportationManager.icc \
+ /home/torellis/Software/opticks_build/include/G4CX/G4CXOpticks.hh \
+ /home/torellis/Software/opticks_build/include/SysRap/schrono.h \
+ /home/torellis/Software/opticks_build/externals/plog/include/plog/Severity.h \
+ /home/torellis/Software/opticks_build/include/G4CX/G4CX_API_EXPORT.hh
