@@ -37,6 +37,7 @@
 #include "G4RunManager.hh"
 #include "G4LogicalVolume.hh"
 #include "G4Scintillation.hh"
+#include "G4OpBoundaryProcess.hh"
 #include <G4OpticalPhoton.hh>
 #include <G4ProcessManager.hh>
 
@@ -77,38 +78,36 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       G4ProcessVector *PostStepProc = sMg->GetfPostStepDoItVector();
       size_t MaxSteps = sMg->GetMAXofPostStepLoops();
       //#pragma omp parallel for num_threads(15)                                                                                                                                                                                                    
+
       for (int stp = 0; stp < MaxSteps; stp++) {
 	if ((*PostStepProc)[stp]->GetProcessName() == "Scintillation") {
 	  G4Scintillation *ScintProc = (G4Scintillation *) (*PostStepProc)[stp];
 	  G4int num_photons = ScintProc->GetNumPhotons();
-	  std::cout << "Scintilation "<< num_photons <<std::endl;
+	  //std::cout << "Scintilation "<< num_photons <<std::endl;
 	  
 	  if (num_photons > 0) {
 	    TotalPhotns+=num_photons;
-	    std::cout << "Scintilation "<< num_photons <<" Amount of Singlets " <<singlets <<" Triplets " << triplets <<std::endl;                                                                                                          
 	  }	  
 	}
       }
       
       
 #ifdef With_Opticks
+      
       t1 = MPT->GetConstProperty(kSCINTILLATIONTIMECONSTANT1);
       t2 = MPT->GetConstProperty(kSCINTILLATIONTIMECONSTANT2);
+      
       singlets = floor(MPT->GetConstProperty(kSCINTILLATIONYIELD1) * TotalPhotns);
       triplets = ceil(MPT->GetConstProperty(kSCINTILLATIONYIELD2) * TotalPhotns);
-      std::cout << "Singlets + triplets =" << (singlets+triplets) << std::endl;; // S1
 
+      std::cout << "Scintilation "<< TotalPhotns <<" Amount of Singlets " <<singlets <<" Triplets " << triplets <<std::endl;
+      std::cout << "Singlets + triplets =" << (singlets+triplets) << std::endl;; // S1
+      
       if (singlets > 0)
 	U4::CollectGenstep_DsG4Scintillation_r4695(track, step, singlets, 0, t1);
       if (triplets > 0)
 	U4::CollectGenstep_DsG4Scintillation_r4695(track, step, triplets, 1, t2);
       
-      std::cout << "HERE" << std::endl;      
-      /*#ifdef With_G4OpticksTest
-      //pManger->fOpticksPhotonCounter+=(singlets+triplets);                                                                                                                                                                                             
-      pManger->fOpticksPhotonCounter+=(num_photons);
-      #endif*/
-
       G4RunManager * runmng=G4RunManager::GetRunManager();
       const int eventID=runmng->GetCurrentEvent()->GetEventID();
 
@@ -116,22 +115,17 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       int maxPhoton=SEventConfig::MaxPhoton();
       
       if(CollectedPhotons>(maxPhoton*0.97)){
-			
+	
 	std::cout<<"Event " << eventID<<" Simulating Photons in GPU and Saving the hits to file .." <<std::endl;
-      
+	
 	G4CXOpticks * g4xc=G4CXOpticks::Get();
 	g4xc->simulate(eventID,0);
        	cudaDeviceSynchronize();
-	  
-	pManger->CollectOpticksHits();
-       
-	
+	       	
 	if(SEvt::GetNumPhotonCollected(0)>0)
 	  G4CXOpticks::Get()->reset(eventID);
       }
-      
 #endif
-      
     }
   }
   
@@ -154,13 +148,12 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       G4String detector_name = step->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetName();
       auto PostStep=step->GetPostStepPoint();
       G4double wavelength=1239.8/PostStep->GetTotalEnergy()*CLHEP::eV; //nm                                                                                                                                                                         
-      std::cot << "Optical Hits" << detector_name << " " << PostStep->GetPosition() << " " << PostStep->GetGlobalTime() << " " PostStep->GetMomentum() << " " << PostStep->GetPolarization() << " " << wavelength << std::endl;
+      std::cout << "Optical Hits" << detector_name << " " << PostStep->GetPosition() << " " << PostStep->GetGlobalTime() << " "<< PostStep->GetMomentum() << " " << PostStep->GetPolarization() << " " << wavelength << std::endl;
     }
   }
   
   
 #endif
-  std::cout << "HERE8" << std::endl;
   return;
 }
 

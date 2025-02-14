@@ -4835,7 +4835,337 @@ CMakeFiles/lib.dir/src/RunAction.cc.o: ../src/RunAction.cc \
   /home/torellis/Software/opticks_build/include/G4CX/G4CXOpticks.hh \
   /home/torellis/Software/opticks_build/include/SysRap/schrono.h \
   /home/torellis/Software/opticks_build/externals/plog/include/plog/Severity.h \
-  /home/torellis/Software/opticks_build/include/G4CX/G4CX_API_EXPORT.hh
+  /home/torellis/Software/opticks_build/include/G4CX/G4CX_API_EXPORT.hh \
+  /home/torellis/Software/opticks_build/include/SysRap/SEvt.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/cassert \
+  /home/torellis/Software/opticks_build/include/SysRap/scuda.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/vector_functions.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/cuda_runtime_api.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/crt/host_defines.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/builtin_types.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/device_types.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/driver_types.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/vector_types.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/surface_types.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/texture_types.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/cuda_device_runtime_api.h \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/vector_functions.hpp \
+  /scicomp/builds/Rocky/8.7/Common/software/CUDA/11.7.0/include/vector_types.h \
+  /home/torellis/Software/opticks_build/include/SysRap/squad.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sphoton.h \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/glm.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/_fixes.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/simd/platform.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/cfloat \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/float.h \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/fwd.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/qualifier.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/vec2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_bool2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_vec2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_vec2.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/compute_vector_relational.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_bool2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_float2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_float2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_double2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_double2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_int2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_int2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_uint2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_uint2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/vec3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_bool3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_vec3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_vec3.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_bool3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_float3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_float3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_double3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_double3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_int3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_int3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_uint3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_uint3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/vec4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_bool4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_vec4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_vec4.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_bool4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_float4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_float4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_double4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_double4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_int4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_int4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_uint4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/vector_uint4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/mat2x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/matrix_double2x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_mat2x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_mat2x2.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/matrix.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat2x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double2x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat2x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat2x3.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double2x3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float2x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float2x3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat2x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double2x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat2x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat2x4.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double2x4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float2x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float2x4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat3x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double3x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat3x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat3x2.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double3x2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float3x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float3x2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat3x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double3x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat3x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat3x3.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double3x3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float3x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float3x3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat3x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double3x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat3x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat3x4.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double3x4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float3x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float3x4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat4x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double4x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat4x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat4x2.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double4x2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float4x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float4x2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat4x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double4x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat4x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat4x3.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double4x3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float4x3.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float4x3_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/mat4x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double4x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat4x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat4x4.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double4x4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float4x4.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_float4x4_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/func_matrix.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/geometric.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/func_geometric.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/exponential.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_vec1.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_vec1.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/func_exponential.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/vector_relational.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/func_vector_relational.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/_vectorize.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/common.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/_fixes.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/func_common.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/compute_common.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/matrix_double2x2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/matrix_float2x2.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/ext/matrix_float2x2_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/trigonometric.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/func_trigonometric.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/packing.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/func_packing.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_half.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/type_half.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/integer.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/func_integer.inl \
+  /home/torellis/Software/opticks_build/include/SysRap/stran.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/csignal \
+  /usr/include/signal.h \
+  /usr/include/bits/signum.h \
+  /usr/include/bits/signum-generic.h \
+  /usr/include/bits/types/sig_atomic_t.h \
+  /usr/include/bits/types/siginfo_t.h \
+  /usr/include/bits/types/__sigval_t.h \
+  /usr/include/bits/siginfo-arch.h \
+  /usr/include/bits/siginfo-consts.h \
+  /usr/include/bits/siginfo-consts-arch.h \
+  /usr/include/bits/types/sigval_t.h \
+  /usr/include/bits/types/sigevent_t.h \
+  /usr/include/bits/sigevent-consts.h \
+  /usr/include/bits/sigaction.h \
+  /usr/include/bits/sigcontext.h \
+  /usr/include/bits/types/stack_t.h \
+  /usr/include/sys/ucontext.h \
+  /usr/include/bits/sigstack.h \
+  /usr/include/bits/ss_flags.h \
+  /usr/include/bits/types/struct_sigstack.h \
+  /usr/include/bits/sigthread.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sqat4.h \
+  /home/torellis/Software/opticks_build/include/SysRap/stra.h \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/string_cast.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtc/type_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/quaternion.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/constants.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/scalar_constants.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/scalar_constants.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/constants.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/matrix_transform.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_projection.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_projection.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_clip_space.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_clip_space.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_transform.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_transform.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/matrix_transform.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_relational.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_relational.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_float.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_common.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_geometric.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_geometric.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_common.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_float.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_quat.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_relational.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_relational.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_quat.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_float_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_double.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_double_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_trigonometric.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_trigonometric.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_transform.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/quaternion_transform.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/quaternion.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/epsilon.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/epsilon.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/gtc/vec1.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_bool1.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_bool1_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_float1.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_float1_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_double1.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_double1_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_int1.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_int1_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_uint1.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/vector_uint1_precision.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/scalar_int_sized.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/scalar_uint_sized.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtc/type_precision.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/dual_quaternion.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/dual_quaternion.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/string_cast.inl \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/cstdarg \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/transform.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/transform.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtc/type_ptr.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtc/type_ptr.inl \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/component_wise.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/detail/setup.hpp \
+  /home/torellis/Software/opticks_build/externals/glm/glm/glm/gtx/component_wise.inl \
+  /home/torellis/Software/opticks_build/include/SysRap/NP.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/random \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bits/random.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu/bits/opt_random.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bits/random.tcc \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/numeric \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bits/stl_numeric.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/pstl/glue_numeric_defs.h \
+  /home/torellis/Software/opticks_build/include/SysRap/NPU.hh \
+  /usr/include/sys/stat.h \
+  /usr/include/bits/stat.h \
+  /usr/include/bits/statx.h \
+  /usr/include/linux/stat.h \
+  /usr/include/linux/types.h \
+  /usr/include/asm/types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/asm/posix_types.h \
+  /usr/include/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/bits/statx-generic.h \
+  /usr/include/bits/types/struct_statx_timestamp.h \
+  /usr/include/bits/types/struct_statx.h \
+  /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/arpa/inet.h \
+  /usr/include/netinet/in.h \
+  /usr/include/sys/socket.h \
+  /usr/include/bits/types/struct_iovec.h \
+  /usr/include/bits/socket.h \
+  /usr/include/bits/socket_type.h \
+  /usr/include/bits/sockaddr.h \
+  /usr/include/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/bits/types/struct_osockaddr.h \
+  /usr/include/bits/in.h \
+  /usr/include/dirent.h \
+  /usr/include/bits/dirent.h \
+  /home/torellis/Software/opticks_build/include/SysRap/smath.h \
+  /home/torellis/Software/opticks_build/include/SysRap/OpticksPhoton.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bitset \
+  /home/torellis/Software/opticks_build/include/SysRap/sdigest.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/OpenSSL/1.1/include/openssl/md5.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/OpenSSL/1.1/include/openssl/opensslconf.h \
+  /usr/include/openssl/opensslconf-x86_64.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/OpenSSL/1.1/include/openssl/opensslv.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/OpenSSL/1.1/include/openssl/e_os2.h \
+  /home/torellis/Software/opticks_build/include/SysRap/OpticksPhoton.hh \
+  /home/torellis/Software/opticks_build/include/SysRap/SYSRAP_API_EXPORT.hh \
+  /home/torellis/Software/opticks_build/include/SysRap/sphit.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sstate.h \
+  /home/torellis/Software/opticks_build/include/SysRap/srec.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sseq.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sstr.h \
+  /home/torellis/Software/opticks_build/include/SysRap/stag.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sevent.h \
+  /home/torellis/Software/opticks_build/include/SysRap/SEventConfig.hh \
+  /home/torellis/Software/opticks_build/include/SysRap/sctx.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sprof.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sstamp.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sproc.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sframe.h \
+  /home/torellis/Software/opticks_build/include/SysRap/spath.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sdirectory.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/filesystem \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bits/fs_fwd.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bits/fs_path.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/codecvt \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bits/fs_dir.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/include/c++/11.3.0/bits/fs_ops.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sfr.h \
+  /home/torellis/Software/opticks_build/include/SysRap/sgs.h \
+  /home/torellis/Software/opticks_build/include/SysRap/spho.h \
+  /home/torellis/Software/opticks_build/include/SysRap/OpticksGenstep.h \
+  /home/torellis/Software/opticks_build/include/SysRap/SComp.h \
+  /home/torellis/Software/opticks_build/include/SysRap/SRandom.h
 
 CMakeFiles/lib.dir/src/SiPMSensDet.cc.o: ../src/SiPMSensDet.cc \
   /usr/include/stdc-predef.h \
@@ -6255,6 +6585,17 @@ CMakeFiles/lib.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc \
   /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4EmSaturation.hh \
   /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4OpticalPhoton.hh \
   /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VRestDiscreteProcess.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4OpBoundaryProcess.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4OpticalSurface.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4Physics2DVector.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4Physics2DVector.icc \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4SurfaceProperty.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4RandomTools.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4RandomDirection.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4TwoVector.hh \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/CLHEP/2.4.6.2-GCC-11.3.0/include/CLHEP/Vector/TwoVector.h \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/CLHEP/2.4.6.2-GCC-11.3.0/include/CLHEP/Vector/TwoVector.icc \
+  /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VDiscreteProcess.hh \
   /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4OpticalPhoton.hh \
   /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4ProcessManager.hh \
   /home/torellis/Software/opticks_build/include/G4CX/G4CXOpticks.hh \
@@ -6267,6 +6608,10 @@ CMakeFiles/lib.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc \
 
 
 /home/torellis/Software/opticks_build/include/U4/U4.hh:
+
+/scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4RandomDirection.hh:
+
+/scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4RandomTools.hh:
 
 /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4EmSaturation.hh:
 
@@ -6568,6 +6913,8 @@ include/CrystalOptical/PhysicsList.hh:
 
 /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/ext/matrix_double2x4_precision.hpp:
 
+/scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VDiscreteProcess.hh:
+
 /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/detail/type_mat2x4.inl:
 
 /home/torellis/Software/opticks_build/externals/glm/glm-0.9.9.5/glm/glm/geometric.hpp:
@@ -6807,6 +7154,8 @@ include/CrystalOptical/OpticalProperties.hh:
 /home/torellis/Software/opticks_build/include/SysRap/schrono.h:
 
 /scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4RunManagerKernel.hh:
+
+/scicomp/builds/Rocky/8.7/CascadeLake/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4OpBoundaryProcess.hh:
 
 /scicomp/builds/Rocky/8.7/CascadeLake/software/OpenSSL/1.1/include/openssl/opensslconf.h:
 

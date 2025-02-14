@@ -17,7 +17,7 @@ SiPMSensitiveDetector::~SiPMSensitiveDetector() {}
 
 G4bool SiPMSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* history) {
 
-  G4cout << "______PASSED____" << G4endl;
+  //G4cout << "______PASSED____" << G4endl;
 
   // Get the track of the particle
   G4Track* track = step->GetTrack();
@@ -44,6 +44,8 @@ G4bool SiPMSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* hist
       currentProcessName = step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
     }
 
+
+    /*
     // Print the information
     G4cout << "Optical photon detected in sensor: " << sensorName << G4endl;
     G4cout << "  Wavelength: " << wavelength << " nm" << G4endl;
@@ -54,7 +56,7 @@ G4bool SiPMSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* hist
     G4cout << "  Track ID: " << track->GetTrackID() << G4endl;
     G4cout << "  Parent ID: " << track->GetParentID() << G4endl;
     G4cout << G4endl;
-  
+    */
     
   }
 

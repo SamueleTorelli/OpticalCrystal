@@ -137,7 +137,7 @@ namespace opticalprops {
     mpt->AddProperty("SCINTILLATIONCOMPONENT1", energy, emission_intensity_cold);
     mpt->AddProperty("FASTCOMPONENT", energy, emission_intensity_cold,true);
     
-    mpt->AddProperty("SCINTILLATIONCOMPONENT2", energy, emission_intensity_cold);
+    mpt->AddProperty("SCINTILLATIONCOMPONENT2", energy, emission_intensity_warm);
     mpt->AddProperty("SLOWCOMPONENT", energy, emission_intensity_cold,true);
 
     mpt->AddProperty("REEMISSIONPROB", energy, reemission_prob,true);
@@ -150,13 +150,20 @@ namespace opticalprops {
     //mpt->AddConstProperty("SCINTILLATIONYIELD", 100000 / MeV);
 
     //This is fake, for test purpose, the real one is above
-    mpt->AddConstProperty("SCINTILLATIONYIELD", 10000 / MeV);
+    mpt->AddConstProperty("SCINTILLATIONYIELD", 100000 / MeV);
     
-    mpt->AddConstProperty("SCINTILLATIONYIELD1", 700 / MeV );
-    mpt->AddConstProperty("SCINTILLATIONYIELD2", 300 / MeV );
+    mpt->AddConstProperty("SCINTILLATIONYIELD1", 0.7 );
+    mpt->AddConstProperty("SCINTILLATIONYIELD2", 0.3 );
+
+    //mpt->AddConstProperty("kSCINTILLATIONYIELD1", 0.7, true);
+    //mpt->AddConstProperty("kSCINTILLATIONYIELD2", 0.3, true);
 
     mpt->AddConstProperty("SCINTILLATIONTIMECONSTANT1",   csi_time_fast);
     mpt->AddConstProperty("SCINTILLATIONTIMECONSTANT2",   csi_time_slow);
+
+    //mpt->AddConstProperty("kSCINTILLATIONTIMECONSTANT1",   csi_time_fast, true);
+    //mpt->AddConstProperty("kSCINTILLATIONTIMECONSTANT2",   csi_time_slow, true);
+    
     mpt->AddConstProperty("RESOLUTIONSCALE",    1.0);
 
     return mpt;

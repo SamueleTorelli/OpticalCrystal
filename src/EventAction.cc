@@ -59,11 +59,14 @@ void EventAction::BeginOfEventAction(const G4Event* event)
   
   PersistencyManager* pm = dynamic_cast<PersistencyManager*>
     (G4VPersistencyManager::GetPersistencyManager());
-  //pm->fG4PhotonCounter=0;                                                                                                                                                                       
-  //pm->fOpticksPhotonCounter=0;      
-  
+    
   G4PrimaryVertex* pVtx;
   pVtx = event->GetPrimaryVertex();
+
+  G4cout << "_____________Begin of event_____________" << G4endl;
+  G4cout << "______________" << event->GetEventID() << "______________" << G4endl; 
+  G4cout << "______________________________________" << G4endl;
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -75,8 +78,6 @@ void EventAction::EndOfEventAction(const G4Event* event)
 
   PersistencyManager* pm = dynamic_cast<PersistencyManager*>
     (G4VPersistencyManager::GetPersistencyManager());
-  
-  std::cout << "EventHERE" << std::endl;
   
 #ifdef With_Opticks
   G4AutoLock lock(&opticks_mt);
@@ -91,25 +92,20 @@ void EventAction::EndOfEventAction(const G4Event* event)
   if(ngenstep>0){
     std::cout<<g4cx->desc()<<std::endl;
     std::cout<<"--- G4Optickx ---" << g4cx->descSimulate() <<std::endl;
-    std::cout << "Event0.2HERE" << std::endl;
     g4cx->simulate(eventID,0); // For Simulation
-    std::cout << "Event0.3HERE" << std::endl;
     cudaDeviceSynchronize();
-    std::cout << "Event1HERE" << std::endl;
     hits=SEvt::GetNumHit(0);
     
-    std::cout << "DefaultEventAction Hits " << hits<<std::endl;
+    std::cout << "EventAction Hits" << hits<<std::endl;
     if(hits>0) pm->CollectOpticksHits();
     
     std::cout<<"Event " <<eventID <<" Simulating with Opticks nphotons "<< nphotons << " nsteps " << ngenstep << " Hits " <<SEvt::GetNumHit(0) << std::endl;
   }
   
-  std::cout << "Event2HERE" << std::endl;
-  
   G4CXOpticks::Get()->reset(eventID);
   
-  //G4cout<<" Opticks End of Event Action" <<G4endl;                                                                                                                                                                                                
-
+  G4cout<<" Opticks End of Event Action" <<G4endl;
+  
 #endif
 
   

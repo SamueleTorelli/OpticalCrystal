@@ -44,6 +44,7 @@
 #ifdef With_Opticks
 #include "G4TransportationManager.hh"
 #include "G4CXOpticks.hh"
+#include "SEvt.hh"
 #endif
 
 namespace B1
@@ -65,7 +66,14 @@ void RunAction::BeginOfRunAction(const G4Run*)
 {
   // inform the runManager to save random number seed
   G4RunManager::GetRunManager()->SetRandomNumberStore(false);
+  #ifdef With_Opticks
   G4CXOpticks* g4ok                 = G4CXOpticks::Get();
+  #endif
+
+  G4cout << "_____________MaxPhotonSet_____________" << G4endl;
+  G4cout << "______________" << SEventConfig::MaxPhoton() << "______________" << G4endl; 
+  G4cout << "______________________________________" << G4endl;
+  G4cout << G4endl;
   
 }
 

@@ -60,7 +60,7 @@ int main(int argc,char** argv)
 
 #ifdef With_Opticks
   // Line one bellow is temporary
-  SEventConfig::SetMaxPhoton(10000000);
+  //SEventConfig::SetMaxPhoton(1000000);
   OPTICKS_LOG(argc,argv); // This is needed
   std::cout<< "______________SEventDesc____________"<<std::endl;
   std::cout<< SEventConfig::Desc() << std::endl;

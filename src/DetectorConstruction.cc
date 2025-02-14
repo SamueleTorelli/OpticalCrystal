@@ -332,28 +332,27 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //
   //
 
-  /*
   //TeflonSurface
   G4OpticalSurface* opTeflonSurface = new G4OpticalSurface("TeflonSurface");
-  opTeflonSurface->SetType(dielectric_LUT);
-  opTeflonSurface->SetFinish(polished);
+  opTeflonSurface->SetType(dielectric_dielectric);
+  opTeflonSurface->SetFinish(ground);
   opTeflonSurface->SetModel(LUT);
   opTeflonSurface->SetMaterialPropertiesTable(opticalprops::PTFE());
   
   G4LogicalSkinSurface* LTeflonSurface  =
     new G4LogicalSkinSurface( "LTeflonSurface", logicTeflonBox, opTeflonSurface);
-
+      
   
   //CrysSurface
   G4OpticalSurface* opCrysSurface = new G4OpticalSurface("CrysSurface");
-  opCrysSurface->SetType(dielectric_LUT);
+  opCrysSurface->SetType(dielectric_dielectric);
   opCrysSurface->SetFinish(polished);
   opCrysSurface->SetModel(LUT);
   opCrysSurface->SetMaterialPropertiesTable(opticalprops::PTFE());
   
   G4LogicalSkinSurface* LCrysSurface  =
     new G4LogicalSkinSurface( "LCrysSurface", logicCrystal, opCrysSurface);
-  */
+ 
 
   //WindowSkin (Use the skin due to contact with multiple elements)
   G4OpticalSurface* opWindowSurface = new G4OpticalSurface("WindowSkin");
@@ -394,16 +393,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-
-
   void DetectorConstruction::ConstructSDandField() {
     
     G4VSensitiveDetector* sensitiveDetector = new SiPMSensitiveDetector("SiPMSensitiveDetector");
     G4SDManager::GetSDMpointer()->AddNewDetector(sensitiveDetector);
-    
     // Assign the sensitive detector to the logical volume
     fsens_logic_vol->SetSensitiveDetector(sensitiveDetector);
   }
-
-
+  
+  
 }
