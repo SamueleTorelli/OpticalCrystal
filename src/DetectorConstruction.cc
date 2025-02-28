@@ -51,6 +51,12 @@
 #include "SiPMSensDet.hh"
 #include "OpticalProperties.hh"
 
+#ifdef With_Opticks
+#include "G4CXOpticks.hh"
+#include <cuda_runtime.h>
+#include "SEventConfig.hh"
+#endif
+
 namespace B1
 
 {
@@ -326,20 +332,34 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //
   //
 
-  //TeflonCrysSurface
-  G4OpticalSurface* opTeflonCrysSurface = new G4OpticalSurface("TeflonCrysSurface");
-  opTeflonCrysSurface->SetType(dielectric_LUT);
-  opTeflonCrysSurface->SetFinish(groundteflonair);
-  opTeflonCrysSurface->SetModel(LUT);
+  //TeflonSurface
+  G4OpticalSurface* opTeflonSurface = new G4OpticalSurface("TeflonSurface");
+  opTeflonSurface->SetType(dielectric_dielectric);
+  opTeflonSurface->SetFinish(ground);
+  opTeflonSurface->SetModel(LUT);
+  opTeflonSurface->SetMaterialPropertiesTable(opticalprops::PTFE());
   
-  G4LogicalBorderSurface* LTeflonCrysSurface  = new G4LogicalBorderSurface( "LTeflonCrysSurface", physicCrystal, physicTeflonBox, opTeflonCrysSurface);
-
+  G4LogicalSkinSurface* LTeflonSurface  =
+    new G4LogicalSkinSurface( "LTeflonSurface", logicTeflonBox, opTeflonSurface);
+      
+  
+  //CrysSurface
+  G4OpticalSurface* opCrysSurface = new G4OpticalSurface("CrysSurface");
+  opCrysSurface->SetType(dielectric_dielectric);
+  opCrysSurface->SetFinish(polished);
+  opCrysSurface->SetModel(LUT);
+  opCrysSurface->SetMaterialPropertiesTable(opticalprops::PTFE());
+  
+  G4LogicalSkinSurface* LCrysSurface  =
+    new G4LogicalSkinSurface( "LCrysSurface", logicCrystal, opCrysSurface);
+ 
 
   //WindowSkin (Use the skin due to contact with multiple elements)
   G4OpticalSurface* opWindowSurface = new G4OpticalSurface("WindowSkin");
   opWindowSurface->SetType(dielectric_dielectric);
   opWindowSurface->SetFinish(polished);
   opWindowSurface->SetModel(glisur);
+  opWindowSurface->SetMaterialPropertiesTable(opticalprops::OptCoupler());
   
   G4LogicalSkinSurface* CrysWindowSurface =
     new G4LogicalSkinSurface("LWindowSkin", window_logic_vol, opWindowSurface);
@@ -350,11 +370,18 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   opSiPMSurface->SetType(dielectric_LUT);
   opSiPMSurface->SetFinish(polished);
   opSiPMSurface->SetModel(glisur);
+  opSiPMSurface->SetMaterialPropertiesTable(opticalprops::SipmHamamatsu());
+  
   
   G4LogicalSkinSurface* SiPMSurface =
-    new G4LogicalSkinSurface("LSiPMSkine", window_logic_vol, opWindowSurface);
+    new G4LogicalSkinSurface("LSiPMSkin", window_logic_vol, opWindowSurface);
   
-  
+
+#ifdef With_Opticks
+  std::cout <<"Setting our detector geometry with opticks" <<std::endl;
+  G4CXOpticks::SetGeometry(physWorld);
+  std::cout << SEventConfig::Desc() <<std::endl;
+#endif
   
   //
   //always return the physical World
@@ -370,11 +397,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     
     G4VSensitiveDetector* sensitiveDetector = new SiPMSensitiveDetector("SiPMSensitiveDetector");
     G4SDManager::GetSDMpointer()->AddNewDetector(sensitiveDetector);
-    
     // Assign the sensitive detector to the logical volume
     fsens_logic_vol->SetSensitiveDetector(sensitiveDetector);
   }
-
-
+  
   
 }

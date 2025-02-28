@@ -29,9 +29,18 @@
 
 #include "EventAction.hh"
 #include "RunAction.hh"
+#include "PersistencyManager.hh"
 
 #include "G4Event.hh"
 #include "G4RunManager.hh"
+#include "G4TrajectoryContainer.hh"
+#include <G4Trajectory.hh>
+
+#ifdef With_Opticks
+    #  include "SEvt.hh"
+    #  include "G4CXOpticks.hh"
+namespace {G4Mutex opticks_mt =G4MUTEX_INITIALIZER;}
+#endif
 
 namespace B1
 {
@@ -44,17 +53,63 @@ EventAction::EventAction(RunAction* runAction)
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void EventAction::BeginOfEventAction(const G4Event*)
+void EventAction::BeginOfEventAction(const G4Event* event)
 {
   fEdep = 0.;
+  
+  PersistencyManager* pm = dynamic_cast<PersistencyManager*>
+    (G4VPersistencyManager::GetPersistencyManager());
+    
+  G4PrimaryVertex* pVtx;
+  pVtx = event->GetPrimaryVertex();
+
+  G4cout << "_____________Begin of event_____________" << G4endl;
+  G4cout << "______________" << event->GetEventID() << "______________" << G4endl; 
+  G4cout << "______________________________________" << G4endl;
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-void EventAction::EndOfEventAction(const G4Event*)
+  
+void EventAction::EndOfEventAction(const G4Event* event)
 {
   // accumulate statistics in run action
-  fRunAction->AddEdep(fEdep);
+  //  fRunAction->AddEdep(fEdep);
+
+  PersistencyManager* pm = dynamic_cast<PersistencyManager*>
+    (G4VPersistencyManager::GetPersistencyManager());
+  
+#ifdef With_Opticks
+  G4AutoLock lock(&opticks_mt);
+  G4CXOpticks * g4cx=G4CXOpticks::Get();
+  
+  G4int eventID=event->GetEventID();
+  G4int ngenstep=SEvt::GetNumGenstepFromGenstep(0);
+  G4int nphotons=SEvt::GetNumPhotonCollected(0);                                                                                                                                                                                              
+  G4int hits;
+
+  std::cout << "ngenstep = " << ngenstep << std::endl;
+  
+  // Simulate the photons                                                                                                                                                                                                                       
+  if(nphotons>0 and ngenstep>0){
+    std::cout<<g4cx->desc()<<std::endl;
+    std::cout<<"--- G4Optickx ---" << g4cx->descSimulate() <<std::endl;
+    g4cx->simulate(eventID,0); // For Simulation
+    cudaDeviceSynchronize();
+    hits=SEvt::GetNumHit(0);
+    
+    std::cout << "EventAction Hits" << hits<<std::endl;
+        
+    std::cout<<"Event " <<eventID <<" Simulating with Opticks nphotons "<< nphotons << " nsteps " << ngenstep << " Hits " <<SEvt::GetNumHit(0) << std::endl;
+  }
+  
+  G4CXOpticks::Get()->reset(eventID);
+  
+  G4cout<<" Opticks End of Event Action" <<G4endl;
+  
+#endif
+
+  
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

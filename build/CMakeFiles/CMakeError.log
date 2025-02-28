@@ -1,0 +1,42 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cccf6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cccf6.dir/build.make CMakeFiles/cmTC_cccf6.dir/build
+gmake[1]: Entering directory '/scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cccf6.dir/src.c.o
+/scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cccf6.dir/src.c.o -c /scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cccf6
+/scicomp/builds/Rocky/8.7/CascadeLake/software/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cccf6.dir/link.txt --verbose=1
+/scicomp/builds/Rocky/8.7/CascadeLake/software/GCCcore/11.3.0/bin/cc CMakeFiles/cmTC_cccf6.dir/src.c.o -o cmTC_cccf6 
+/scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: CMakeFiles/cmTC_cccf6.dir/src.c.o: in function `main':
+src.c:(.text+0x2d): undefined reference to `pthread_create'
+/scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: src.c:(.text+0x39): undefined reference to `pthread_detach'
+/scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: src.c:(.text+0x45): undefined reference to `pthread_cancel'
+/scicomp/builds/Rocky/8.7/CascadeLake/software/binutils/2.38-GCCcore-11.3.0/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_cccf6.dir/build.make:99: cmTC_cccf6] Error 1
+gmake[1]: Leaving directory '/scratch/torellis/OpticalCrystal/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cccf6/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

@@ -1,0 +1,196 @@
+﻿2025-02-27 10:38:17.886 INFO  [2123788] [U4Tree::Create@214] [new U4Tree
+2025-02-27 10:38:17.886 INFO  [2123788] [U4Tree::init@270] -initRayleigh
+2025-02-27 10:38:17.886 INFO  [2123788] [U4Tree::init@272] -initMaterials
+2025-02-27 10:38:17.897 INFO  [2123788] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-27 10:38:17.897 INFO  [2123788] [U4Tree::init@277] -initScint
+2025-02-27 10:38:17.898 INFO  [2123788] [U4Tree::init@280] -initSurfaces
+2025-02-27 10:38:17.898 INFO  [2123788] [U4Tree::init@283] -initSolids
+2025-02-27 10:38:17.899 INFO  [2123788] [U4Tree::init@285] -initNodes
+2025-02-27 10:38:17.900 INFO  [2123788] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-27 10:38:17.902 INFO  [2123788] [U4Tree::init@290] -initStandard
+2025-02-27 10:38:17.905 INFO  [2123788] [U4Tree::Create@216] ]new U4Tree
+2025-02-27 10:38:17.905 INFO  [2123788] [U4Tree::Create@218] [stree::factorize
+2025-02-27 10:38:17.905 INFO  [2123788] [U4Tree::Create@220] ]stree::factorize
+2025-02-27 10:38:17.905 INFO  [2123788] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-27 10:38:17.905 INFO  [2123788] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-27 10:38:17.905 INFO  [2123788] [U4Tree::Create@227] [stree::add_inst
+2025-02-27 10:38:17.906 INFO  [2123788] [U4Tree::Create@229] ]stree::add_inst
+2025-02-27 10:38:17.906 INFO  [2123788] [U4Tree::Create@234] [stree::postcreate
+2025-02-27 10:38:17.906 INFO  [2123788] [U4Tree::Create@236] ]stree::postcreate
+2025-02-27 10:38:44.385 INFO  [2123788] [G4CXOpticks::setGeometry_@352] [ G4CXOpticks__setGeometry_saveGeometry 
+2025-02-27 10:38:44.385 INFO  [2123788] [G4CXOpticks::saveGeometry@497] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-27 10:38:44.389 INFO  [2123788] [U4GDML::write@291] Disabling GDXML kludge fix, as Geant4 version 1112>= 1100  U4GDML_GDXML_FIX_DISABLE 1 U4GDML_GDXML_FIX 0
+2025-02-27 10:38:44.389 INFO  [2123788] [U4GDML::write@311]  NOT Applying GDXML::Fix  dstpath /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml
+2025-02-27 10:38:44.389 INFO  [2123788] [U4GDML::write_@318] [
+2025-02-27 10:38:44.389 INFO  [2123788] [U4GDML::write_@327]  path /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml exists NO  rc 0
+2025-02-27 10:41:47.044 INFO  [2123997] [U4Tree::Create@214] [new U4Tree
+2025-02-27 10:41:47.044 INFO  [2123997] [U4Tree::init@270] -initRayleigh
+2025-02-27 10:41:47.044 INFO  [2123997] [U4Tree::init@272] -initMaterials
+2025-02-27 10:41:47.055 INFO  [2123997] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-27 10:41:47.055 INFO  [2123997] [U4Tree::init@277] -initScint
+2025-02-27 10:41:47.056 INFO  [2123997] [U4Tree::init@280] -initSurfaces
+2025-02-27 10:41:47.056 INFO  [2123997] [U4Tree::init@283] -initSolids
+2025-02-27 10:41:47.057 INFO  [2123997] [U4Tree::init@285] -initNodes
+2025-02-27 10:41:47.058 INFO  [2123997] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-27 10:41:47.060 INFO  [2123997] [U4Tree::init@290] -initStandard
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@216] ]new U4Tree
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@218] [stree::factorize
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@220] ]stree::factorize
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@227] [stree::add_inst
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@229] ]stree::add_inst
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@234] [stree::postcreate
+2025-02-27 10:41:47.063 INFO  [2123997] [U4Tree::Create@236] ]stree::postcreate
+2025-02-27 10:42:13.420 INFO  [2123997] [G4CXOpticks::setGeometry_@352] [ G4CXOpticks__setGeometry_saveGeometry 
+2025-02-27 10:42:13.420 INFO  [2123997] [G4CXOpticks::saveGeometry@497] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-27 10:42:13.423 INFO  [2123997] [U4GDML::write@291] Disabling GDXML kludge fix, as Geant4 version 1112>= 1100  U4GDML_GDXML_FIX_DISABLE 1 U4GDML_GDXML_FIX 0
+2025-02-27 10:42:13.423 INFO  [2123997] [U4GDML::write@311]  NOT Applying GDXML::Fix  dstpath /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml
+2025-02-27 10:42:13.423 INFO  [2123997] [U4GDML::write_@318] [
+2025-02-27 10:42:13.424 INFO  [2123997] [U4GDML::write_@327]  path /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml exists NO  rc 0
+2025-02-27 10:44:34.305 INFO  [2124519] [U4Tree::Create@214] [new U4Tree
+2025-02-27 10:44:34.305 INFO  [2124519] [U4Tree::init@270] -initRayleigh
+2025-02-27 10:44:34.305 INFO  [2124519] [U4Tree::init@272] -initMaterials
+2025-02-27 10:44:34.317 INFO  [2124519] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-27 10:44:34.317 INFO  [2124519] [U4Tree::init@277] -initScint
+2025-02-27 10:44:34.317 INFO  [2124519] [U4Tree::init@280] -initSurfaces
+2025-02-27 10:44:34.318 INFO  [2124519] [U4Tree::init@283] -initSolids
+2025-02-27 10:44:34.318 INFO  [2124519] [U4Tree::init@285] -initNodes
+2025-02-27 10:44:34.320 INFO  [2124519] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-27 10:44:34.321 INFO  [2124519] [U4Tree::init@290] -initStandard
+2025-02-27 10:44:34.324 INFO  [2124519] [U4Tree::Create@216] ]new U4Tree
+2025-02-27 10:44:34.324 INFO  [2124519] [U4Tree::Create@218] [stree::factorize
+2025-02-27 10:44:34.325 INFO  [2124519] [U4Tree::Create@220] ]stree::factorize
+2025-02-27 10:44:34.325 INFO  [2124519] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-27 10:44:34.325 INFO  [2124519] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-27 10:44:34.325 INFO  [2124519] [U4Tree::Create@227] [stree::add_inst
+2025-02-27 10:44:34.325 INFO  [2124519] [U4Tree::Create@229] ]stree::add_inst
+2025-02-27 10:44:34.325 INFO  [2124519] [U4Tree::Create@234] [stree::postcreate
+2025-02-27 10:44:34.325 INFO  [2124519] [U4Tree::Create@236] ]stree::postcreate
+2025-02-27 10:45:00.684 INFO  [2124519] [G4CXOpticks::setGeometry_@352] [ G4CXOpticks__setGeometry_saveGeometry 
+2025-02-27 10:45:00.684 INFO  [2124519] [G4CXOpticks::saveGeometry@497] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-27 10:45:00.688 INFO  [2124519] [U4GDML::write@291] Disabling GDXML kludge fix, as Geant4 version 1112>= 1100  U4GDML_GDXML_FIX_DISABLE 1 U4GDML_GDXML_FIX 0
+2025-02-27 10:45:00.688 INFO  [2124519] [U4GDML::write@311]  NOT Applying GDXML::Fix  dstpath /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml
+2025-02-27 10:45:00.688 INFO  [2124519] [U4GDML::write_@318] [
+2025-02-27 10:45:00.688 INFO  [2124519] [U4GDML::write_@327]  path /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml exists NO  rc 0
+2025-02-27 11:33:14.155 INFO  [2126955] [U4Tree::Create@214] [new U4Tree
+2025-02-27 11:33:14.156 INFO  [2126955] [U4Tree::init@270] -initRayleigh
+2025-02-27 11:33:14.156 INFO  [2126955] [U4Tree::init@272] -initMaterials
+2025-02-27 11:33:14.167 INFO  [2126955] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-27 11:33:14.167 INFO  [2126955] [U4Tree::init@277] -initScint
+2025-02-27 11:33:14.168 INFO  [2126955] [U4Tree::init@280] -initSurfaces
+2025-02-27 11:33:14.168 INFO  [2126955] [U4Tree::init@283] -initSolids
+2025-02-27 11:33:14.169 INFO  [2126955] [U4Tree::init@285] -initNodes
+2025-02-27 11:33:14.170 INFO  [2126955] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-27 11:33:14.172 INFO  [2126955] [U4Tree::init@290] -initStandard
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@216] ]new U4Tree
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@218] [stree::factorize
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@220] ]stree::factorize
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@227] [stree::add_inst
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@229] ]stree::add_inst
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@234] [stree::postcreate
+2025-02-27 11:33:14.175 INFO  [2126955] [U4Tree::Create@236] ]stree::postcreate
+2025-02-27 11:33:40.723 INFO  [2126955] [G4CXOpticks::setGeometry_@352] [ G4CXOpticks__setGeometry_saveGeometry 
+2025-02-27 11:33:40.723 INFO  [2126955] [G4CXOpticks::saveGeometry@497] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-27 11:33:40.726 INFO  [2126955] [U4GDML::write@291] Disabling GDXML kludge fix, as Geant4 version 1112>= 1100  U4GDML_GDXML_FIX_DISABLE 1 U4GDML_GDXML_FIX 0
+2025-02-27 11:33:40.726 INFO  [2126955] [U4GDML::write@311]  NOT Applying GDXML::Fix  dstpath /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml
+2025-02-27 11:33:40.726 INFO  [2126955] [U4GDML::write_@318] [
+2025-02-27 11:33:40.726 INFO  [2126955] [U4GDML::write_@327]  path /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml exists NO  rc 0
+2025-02-28 11:02:42.267 INFO  [2275650] [U4Tree::Create@214] [new U4Tree
+2025-02-28 11:02:42.269 INFO  [2275650] [U4Tree::init@270] -initRayleigh
+2025-02-28 11:02:42.269 INFO  [2275650] [U4Tree::init@272] -initMaterials
+2025-02-28 11:02:42.279 INFO  [2275650] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-28 11:02:42.279 INFO  [2275650] [U4Tree::init@277] -initScint
+2025-02-28 11:02:42.280 INFO  [2275650] [U4Tree::init@280] -initSurfaces
+2025-02-28 11:02:42.280 INFO  [2275650] [U4Tree::init@283] -initSolids
+2025-02-28 11:02:42.282 INFO  [2275650] [U4Tree::init@285] -initNodes
+2025-02-28 11:02:42.283 INFO  [2275650] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-28 11:02:42.284 INFO  [2275650] [U4Tree::init@290] -initStandard
+2025-02-28 11:02:42.287 INFO  [2275650] [U4Tree::Create@216] ]new U4Tree
+2025-02-28 11:02:42.287 INFO  [2275650] [U4Tree::Create@218] [stree::factorize
+2025-02-28 11:02:42.288 INFO  [2275650] [U4Tree::Create@220] ]stree::factorize
+2025-02-28 11:02:42.288 INFO  [2275650] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-28 11:02:42.288 INFO  [2275650] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-28 11:02:42.288 INFO  [2275650] [U4Tree::Create@227] [stree::add_inst
+2025-02-28 11:02:42.288 INFO  [2275650] [U4Tree::Create@229] ]stree::add_inst
+2025-02-28 11:02:42.288 INFO  [2275650] [U4Tree::Create@234] [stree::postcreate
+2025-02-28 11:02:42.288 INFO  [2275650] [U4Tree::Create@236] ]stree::postcreate
+2025-02-28 11:02:42.683 FATAL [2275650] [QRng::Load@88]  unabled to open file [/home/torellis/.opticks/rngcache/RNG/QCurandState_3000000_0_0.bin]
+2025-02-28 11:02:42.684 ERROR [2275650] [QRng::Load@89] 
+QRng::Load_FAIL_NOTES
+=======================
+
+QRng::Load failed to load the curandState files. 
+These files should have been created during the *opticks-full* installation 
+by the bash function *opticks-prepare-installation* 
+which runs *qudarap-prepare-installation*. 
+
+Investigate by looking at the contents of the curandState directory, 
+as shown below::
+
+    epsilon:~ blyth$ ls -l  ~/.opticks/rngcache/RNG/
+    total 892336
+    -rw-r--r--  1 blyth  staff   44000000 Oct  6 19:43 QCurandState_1000000_0_0.bin
+    -rw-r--r--  1 blyth  staff  132000000 Oct  6 19:53 QCurandState_3000000_0_0.bin
+    epsilon:~ blyth$ 
+
+
+
+2025-02-28 11:02:49.900 INFO  [2275675] [U4Tree::Create@214] [new U4Tree
+2025-02-28 11:02:49.900 INFO  [2275675] [U4Tree::init@270] -initRayleigh
+2025-02-28 11:02:49.900 INFO  [2275675] [U4Tree::init@272] -initMaterials
+2025-02-28 11:02:49.910 INFO  [2275675] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-28 11:02:49.910 INFO  [2275675] [U4Tree::init@277] -initScint
+2025-02-28 11:02:49.911 INFO  [2275675] [U4Tree::init@280] -initSurfaces
+2025-02-28 11:02:49.912 INFO  [2275675] [U4Tree::init@283] -initSolids
+2025-02-28 11:02:49.912 INFO  [2275675] [U4Tree::init@285] -initNodes
+2025-02-28 11:02:49.913 INFO  [2275675] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-28 11:02:49.915 INFO  [2275675] [U4Tree::init@290] -initStandard
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@216] ]new U4Tree
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@218] [stree::factorize
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@220] ]stree::factorize
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@227] [stree::add_inst
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@229] ]stree::add_inst
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@234] [stree::postcreate
+2025-02-28 11:02:49.918 INFO  [2275675] [U4Tree::Create@236] ]stree::postcreate
+2025-02-28 11:03:18.329 INFO  [2275675] [G4CXOpticks::setGeometry_@352] [ G4CXOpticks__setGeometry_saveGeometry 
+2025-02-28 11:03:18.329 INFO  [2275675] [G4CXOpticks::saveGeometry@497] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-28 11:03:18.337 INFO  [2275675] [U4GDML::write@291] Disabling GDXML kludge fix, as Geant4 version 1112>= 1100  U4GDML_GDXML_FIX_DISABLE 1 U4GDML_GDXML_FIX 0
+2025-02-28 11:03:18.337 INFO  [2275675] [U4GDML::write@311]  NOT Applying GDXML::Fix  dstpath /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml
+2025-02-28 11:03:18.337 INFO  [2275675] [U4GDML::write_@318] [
+2025-02-28 11:03:18.338 INFO  [2275675] [U4GDML::write_@327]  path /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml exists NO  rc 0
+2025-02-28 11:03:18.344 INFO  [2275675] [U4GDML::write_@335] ]
+2025-02-28 11:03:19.371 INFO  [2275675] [G4CXOpticks::setGeometry_@354] ] G4CXOpticks__setGeometry_saveGeometry 
+2025-02-28 11:03:19.371 INFO  [2275675] [G4CXOpticks::setGeometry@269] CSGOptiX::Desc Version 7 NOT:WITH_CUSTOM4 
+2025-02-28 11:06:05.234 INFO  [2275915] [U4Tree::Create@214] [new U4Tree
+2025-02-28 11:06:05.234 INFO  [2275915] [U4Tree::init@270] -initRayleigh
+2025-02-28 11:06:05.234 INFO  [2275915] [U4Tree::init@272] -initMaterials
+2025-02-28 11:06:05.245 INFO  [2275915] [U4Tree::init@274] -initMaterials_NoRINDEX
+2025-02-28 11:06:05.245 INFO  [2275915] [U4Tree::init@277] -initScint
+2025-02-28 11:06:05.245 INFO  [2275915] [U4Tree::init@280] -initSurfaces
+2025-02-28 11:06:05.246 INFO  [2275915] [U4Tree::init@283] -initSolids
+2025-02-28 11:06:05.246 INFO  [2275915] [U4Tree::init@285] -initNodes
+2025-02-28 11:06:05.247 INFO  [2275915] [U4Tree::init@287] -initSurfaces_Serialize
+2025-02-28 11:06:05.249 INFO  [2275915] [U4Tree::init@290] -initStandard
+2025-02-28 11:06:05.252 INFO  [2275915] [U4Tree::Create@216] ]new U4Tree
+2025-02-28 11:06:05.252 INFO  [2275915] [U4Tree::Create@218] [stree::factorize
+2025-02-28 11:06:05.252 INFO  [2275915] [U4Tree::Create@220] ]stree::factorize
+2025-02-28 11:06:05.252 INFO  [2275915] [U4Tree::Create@222] [U4Tree::identifySensitive
+2025-02-28 11:06:05.252 INFO  [2275915] [U4Tree::Create@224] ]U4Tree::identifySensitive
+2025-02-28 11:06:05.252 INFO  [2275915] [U4Tree::Create@227] [stree::add_inst
+2025-02-28 11:06:05.253 INFO  [2275915] [U4Tree::Create@229] ]stree::add_inst
+2025-02-28 11:06:05.253 INFO  [2275915] [U4Tree::Create@234] [stree::postcreate
+2025-02-28 11:06:05.253 INFO  [2275915] [U4Tree::Create@236] ]stree::postcreate
+2025-02-28 11:06:31.019 INFO  [2275915] [G4CXOpticks::setGeometry_@352] [ G4CXOpticks__setGeometry_saveGeometry 
+2025-02-28 11:06:31.019 INFO  [2275915] [G4CXOpticks::saveGeometry@497] [ /home/torellis/.opticks/GEOM/OpticalCrystals
+2025-02-28 11:06:31.022 INFO  [2275915] [U4GDML::write@291] Disabling GDXML kludge fix, as Geant4 version 1112>= 1100  U4GDML_GDXML_FIX_DISABLE 1 U4GDML_GDXML_FIX 0
+2025-02-28 11:06:31.022 INFO  [2275915] [U4GDML::write@311]  NOT Applying GDXML::Fix  dstpath /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml
+2025-02-28 11:06:31.022 INFO  [2275915] [U4GDML::write_@318] [
+2025-02-28 11:06:31.023 INFO  [2275915] [U4GDML::write_@327]  path /home/torellis/.opticks/GEOM/OpticalCrystals/origin.gdml exists YES rc 0
+2025-02-28 11:06:31.029 INFO  [2275915] [U4GDML::write_@335] ]
+2025-02-28 11:06:31.920 INFO  [2275915] [G4CXOpticks::setGeometry_@354] ] G4CXOpticks__setGeometry_saveGeometry 
+2025-02-28 11:06:31.920 INFO  [2275915] [G4CXOpticks::setGeometry@269] CSGOptiX::Desc Version 7 NOT:WITH_CUSTOM4 

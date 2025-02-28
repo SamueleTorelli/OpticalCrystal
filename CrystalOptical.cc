@@ -37,6 +37,11 @@
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
 
+#ifdef With_Opticks
+#include "SEventConfig.hh"
+#include "OPTICKS_LOG.hh"
+#endif
+
 #include "Randomize.hh"
 
 using namespace B1;
@@ -53,6 +58,14 @@ int main(int argc,char** argv)
   // Optionally: choose a different Random engine...
   // G4Random::setTheEngine(new CLHEP::MTwistEngine);
 
+#ifdef With_Opticks
+  // Line one bellow is temporary
+  //SEventConfig::SetMaxPhoton(1000000);
+  OPTICKS_LOG(argc,argv); // This is needed
+  std::cout<< "______________SEventDesc____________"<<std::endl;
+  std::cout<< SEventConfig::Desc() << std::endl;
+#endif
+  
   //use G4SteppingVerboseWithUnits
   G4int precision = 4;
   G4SteppingVerbose::UseBestUnit(precision);
@@ -60,7 +73,7 @@ int main(int argc,char** argv)
   // Construct the default run manager
   //
   auto* runManager =
-    G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+    G4RunManagerFactory::CreateRunManager(G4RunManagerType::SerialOnly);
 
   // Set mandatory initialization classes
   //
