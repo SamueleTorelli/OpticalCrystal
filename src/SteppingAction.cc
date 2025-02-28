@@ -39,6 +39,7 @@
 #include "G4Scintillation.hh"
 #include "G4OpBoundaryProcess.hh"
 #include <G4OpticalPhoton.hh>
+#include <G4Electron.hh>
 #include <G4ProcessManager.hh>
 
 #ifdef With_Opticks
@@ -47,8 +48,6 @@
     #include "U4.hh"
     #include "omp.h"
 #endif
-
-
 
 namespace B1
 {
@@ -62,10 +61,12 @@ SteppingAction::SteppingAction(EventAction* eventAction):G4UserSteppingAction()
 void SteppingAction::UserSteppingAction(const G4Step* step)
 {
 
+  G4Track* track = step->GetTrack();
+  if (track->GetParticleDefinition() == G4Electron::Definition()) {
+    track->SetStepLength(0.01 * CLHEP::mm); // Force 10 µm step size
+  }
+  
   G4ParticleDefinition *pdef = step->GetTrack()->GetDefinition();
-  G4Track *track = step->GetTrack();
-
-  PersistencyManager *pManger= dynamic_cast<PersistencyManager *>(PersistencyManager::GetPersistencyManager());
   
   if (pdef != G4OpticalPhoton::Definition()) {
     G4SteppingManager *sMg = G4EventManager::GetEventManager()->GetTrackingManager()->GetSteppingManager();
@@ -113,7 +114,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
       int CollectedPhotons=SEvt::GetNumPhotonCollected(0);
       int maxPhoton=SEventConfig::MaxPhoton();
-      
+
+      /*
       if(CollectedPhotons>(maxPhoton*0.97)){
 	
 	std::cout<<"Event " << eventID<<" Simulating Photons in GPU and Saving the hits to file .." <<std::endl;
@@ -124,7 +126,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	       	
 	if(SEvt::GetNumPhotonCollected(0)>0)
 	  G4CXOpticks::Get()->reset(eventID);
-      }
+       }*/
+
 #endif
     }
   }

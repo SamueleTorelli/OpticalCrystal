@@ -110,6 +110,25 @@ namespace opticalprops {
         h_Planck * c_light / (260 * nm),
         optPhotMaxE_};
 
+    std::vector<G4double> energy_abs = {
+				    h_Planck * c_light / (735.82 * nm),
+				    h_Planck * c_light / (668.72 * nm),
+				    h_Planck * c_light / (588.34 * nm),
+				    h_Planck * c_light / (531.22 * nm),
+				    h_Planck * c_light / (514.83 * nm),
+				    h_Planck * c_light / (499.67 * nm),
+				    h_Planck * c_light / (482.61 * nm),
+				    h_Planck * c_light / (460.21 * nm),
+				    h_Planck * c_light / (398.43 * nm),
+				    h_Planck * c_light / (375.80 * nm),
+				    h_Planck * c_light / (360.02 * nm),
+				    h_Planck * c_light / (354.44 * nm),
+				    h_Planck * c_light / (349.94 * nm),
+				    h_Planck * c_light / (342.88 * nm),
+				    h_Planck * c_light / (339.25 * nm),
+				    h_Planck * c_light / (333.31 * nm)
+    };
+    
     std::vector<G4double> rIndex = {
         1.766, 1.766, 1.794, 1.806, 1.845, 1.867, 1.902, 1.955, 2.043, 2.043
     };
@@ -117,10 +136,13 @@ namespace opticalprops {
     mpt->AddProperty("RINDEX", energy, rIndex);
 
     std::vector<G4double> absorption = {
-      0.5 * m, 0.5 * m, 0.5 * m, 0.5 * m, 0.5 * m, 0.5 * m, 0.5 * m, 0.5 * m, 0.5 * m, 0.5 * m
+					43.48 * cm, 40.21 * cm, 36.18 * cm, 33.26 * cm, 32.13 * cm, 30.64 * cm,
+					29.96 * cm, 28.52 * cm, 24.40 * cm, 22.20 * cm, 20.70 * cm, 19.57 * cm,
+					17.84 * cm, 13.84 * cm, 9.21 * cm, 3.89 * cm
     };
 
-    mpt->AddProperty("ABSLENGTH", energy, absorption);
+    //take from https://www.researchgate.net/publication/350563095_Simulations_of_light_collection_in_long_tapered_CsITl_scintillators_using_real_crystal_surface_data_and_comparisons_to_measurement/figures?lo=1
+    mpt->AddProperty("ABSLENGTH", energy_abs, absorption);
 
     std::vector<G4double> emission_intensity_warm = {
       0.0,  0.13, 0.17, 0.55, 0.98, 0.97, 0.83, 0.44, 0.16, 0.

@@ -27,10 +27,11 @@
 /// \file B1/src/RunAction.cc
 /// \brief Implementation of the B1::RunAction class
 
+#include <chrono>
+
 #include "RunAction.hh"
 #include "PrimaryGeneratorAction.hh"
 #include "DetectorConstruction.hh"
-// #include "Run.hh"
 
 #include "G4RunManager.hh"
 #include "G4Run.hh"
@@ -68,12 +69,14 @@ void RunAction::BeginOfRunAction(const G4Run*)
   G4RunManager::GetRunManager()->SetRandomNumberStore(false);
   #ifdef With_Opticks
   G4CXOpticks* g4ok                 = G4CXOpticks::Get();
-  #endif
 
   G4cout << "_____________MaxPhotonSet_____________" << G4endl;
   G4cout << "______________" << SEventConfig::MaxPhoton() << "______________" << G4endl; 
   G4cout << "______________________________________" << G4endl;
   G4cout << G4endl;
+  #endif
+
+  start_time = std::chrono::high_resolution_clock::now();
   
 }
 
@@ -83,26 +86,13 @@ void RunAction::EndOfRunAction(const G4Run* run)
 {
   G4int nofEvents = run->GetNumberOfEvent();
   if (nofEvents == 0) return;
-
-
-  const auto detConstruction = static_cast<const DetectorConstruction*>(
-    G4RunManager::GetRunManager()->GetUserDetectorConstruction());
-
   
-  // Run conditions
-  //  note: There is no primary generator action object for "master"
-  //        run manager for multi-threaded mode.
-  const auto generatorAction = static_cast<const PrimaryGeneratorAction*>(
-    G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
-
+  // Capture end time
+  auto end_time = std::chrono::high_resolution_clock::now();
   
-  if (generatorAction)
-  {
-    const G4ParticleGun* particleGun = generatorAction->GetParticleGun();
-    G4double particleEnergy = particleGun->GetParticleEnergy();
-  
-  }
-
+  // Compute execution time
+  std::chrono::duration<double, std::milli> duration = end_time - start_time;
+      
   // Print
   //
   if (IsMaster()) {
@@ -117,11 +107,13 @@ void RunAction::EndOfRunAction(const G4Run* run)
   }
 
   G4cout
-     << G4endl
-     << " The run consists of " << nofEvents << " events " << G4endl
-     << "------------------------------------------------------------"
-     << G4endl
-     << G4endl;
+    << G4endl
+    << " The run consists of " << nofEvents << " events " << G4endl
+    << "------------------------------------------------------------"<< G4endl
+    << " Simulation time =  " << duration.count() << " ms " << G4endl
+    << "------------------------------------------------------------"<< G4endl
+    << G4endl
+    << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

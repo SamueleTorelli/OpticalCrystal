@@ -87,9 +87,11 @@ void EventAction::EndOfEventAction(const G4Event* event)
   G4int ngenstep=SEvt::GetNumGenstepFromGenstep(0);
   G4int nphotons=SEvt::GetNumPhotonCollected(0);                                                                                                                                                                                              
   G4int hits;
+
+  std::cout << "ngenstep = " << ngenstep << std::endl;
   
   // Simulate the photons                                                                                                                                                                                                                       
-  if(ngenstep>0){
+  if(nphotons>0 and ngenstep>0){
     std::cout<<g4cx->desc()<<std::endl;
     std::cout<<"--- G4Optickx ---" << g4cx->descSimulate() <<std::endl;
     g4cx->simulate(eventID,0); // For Simulation
@@ -97,8 +99,7 @@ void EventAction::EndOfEventAction(const G4Event* event)
     hits=SEvt::GetNumHit(0);
     
     std::cout << "EventAction Hits" << hits<<std::endl;
-    if(hits>0) pm->CollectOpticksHits();
-    
+        
     std::cout<<"Event " <<eventID <<" Simulating with Opticks nphotons "<< nphotons << " nsteps " << ngenstep << " Hits " <<SEvt::GetNumHit(0) << std::endl;
   }
   

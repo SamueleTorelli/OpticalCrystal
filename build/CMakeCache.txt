@@ -471,7 +471,7 @@ Qt5PrintSupport_DIR:PATH=/scicomp/builds/Rocky/8.7/CascadeLake/software/Qt5/5.15
 Qt5Widgets_DIR:PATH=/scicomp/builds/Rocky/8.7/CascadeLake/software/Qt5/5.15.5-GCCcore-11.3.0/lib64/cmake/Qt5Widgets
 
 //Name of the computer/site where compile is being run
-SITE:STRING=hyperion-140
+SITE:STRING=hyperion-118
 
 //The directory containing a CMake configuration file for SysRap.
 SysRap_DIR:PATH=/home/torellis/Software/opticks_build/lib64/cmake/sysrap

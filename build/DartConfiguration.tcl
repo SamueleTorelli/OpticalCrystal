@@ -11,7 +11,7 @@ BuildDirectory: /scratch/torellis/OpticalCrystal/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: hyperion-140
+Site: hyperion-118
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++
